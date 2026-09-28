@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>开心练</title>
+  <meta name="description" content="开心练是 iPhone 上的自重训练应用。用摄像头在本地数俯卧撑、引体向上、卷腹和深蹲，数据只留在手机上。">
+  <link rel="icon" href="logo.png">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f6f7;
+      --ink: #1c1c1e;
+      --muted: #6e6e73;
+      --line: rgba(0, 0, 0, 0.1);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+    }
+    a { color: inherit; }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 28px 24px 64px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+    .brand img, .hero img {
+      display: block;
+      background: #000;
+    }
+    .brand img {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+    }
+    header nav {
+      display: flex;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    header nav a { text-decoration: none; }
+    header nav a:hover { color: var(--ink); }
+    .hero { padding: 72px 0 28px; }
+    .hero img {
+      width: 88px;
+      height: 88px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+    }
+    h1 {
+      margin: 22px 0 10px;
+      font-size: clamp(40px, 8vw, 64px);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+    .lead {
+      max-width: 28em;
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .cta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px 16px;
+      margin-top: 28px;
+    }
+    .download {
+      display: inline-flex;
+      align-items: center;
+      background: #1c1c1e;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1;
+      padding: 14px 22px;
+      border-radius: 999px;
+    }
+    .download:hover { background: #3a3a3c; }
+    .cta p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .moves {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .moves li {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 14px;
+    }
+    section { padding: 28px 0; }
+    h2 {
+      margin: 0 0 8px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .points { margin: 0; padding: 0; list-style: none; }
+    .points li {
+      padding: 18px 0;
+      border-top: 1px solid var(--line);
+    }
+    .points strong { display: block; font-size: 18px; margin-bottom: 4px; }
+    .points p { margin: 0; color: var(--muted); }
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      margin-top: 12px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer a { text-decoration: none; }
+    footer a:hover { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./">
+        <img src="logo.png" alt="">
+        开心练
+      </a>
+      <nav>
+        <a href="user-agreement.html">用户协议</a>
+        <a href="privacy-policy.html">隐私政策</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <img src="logo.png" alt="开心练">
+        <h1>开心练</h1>
+        <p class="lead">在 iPhone 上安排俯卧撑、引体向上、卷腹和深蹲。摄像头只在手机本地数数，训练记录不上传。</p>
+        <div class="cta">
+          <a class="download" href="https://apps.apple.com/">下载 iOS 版</a>
+          <p>目前只支持 iOS</p>
+        </div>
+        <ul class="moves">
+          <li>俯卧撑</li>
+          <li>引体向上</li>
+          <li>卷腹</li>
+          <li>深蹲</li>
+        </ul>
+      </div>
+
+      <section>
+        <h2>怎么用</h2>
+        <ul class="points">
+          <li>
+            <strong>对着镜头练</strong>
+            <p>完成一下就记一下。画面不保存，也不发给任何识别服务。</p>
+          </li>
+          <li>
+            <strong>到点提醒</strong>
+            <p>按你选的训练日和时间，在本机响铃。练完就停。</p>
+          </li>
+          <li>
+            <strong>数据留在手机上</strong>
+            <p>没有账号。计划和打卡日期只存在这台手机里，卸载即删除。</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <a href="mailto:ling_start@126.com">ling_start@126.com</a>
+      <a href="user-agreement.html">用户协议</a>
+      <a href="privacy-policy.html">隐私政策</a>
+    </footer>
+  </div>
+</body>
+</html>
